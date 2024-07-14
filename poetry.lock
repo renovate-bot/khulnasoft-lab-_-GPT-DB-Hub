@@ -663,13 +663,13 @@ files = [
 
 [[package]]
 name = "einops"
-version = "0.6.1"
+version = "0.8.0"
 description = "A new flavour of deep learning operations"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "einops-0.6.1-py3-none-any.whl", hash = "sha256:99149e46cc808956b174932fe563d920db4d6e5dadb8c6ecdaa7483b7ef7cfc3"},
-    {file = "einops-0.6.1.tar.gz", hash = "sha256:f95f8d00f4ded90dbc4b19b6f98b177332614b0357dde66997f3ae5d474dc8c8"},
+    {file = "einops-0.8.0-py3-none-any.whl", hash = "sha256:9572fb63046264a862693b0a87088af3bdc8c068fde03de63453cbbde245465f"},
+    {file = "einops-0.8.0.tar.gz", hash = "sha256:63486517fed345712a8385c100cb279108d9d47e6ae59099b07657e983deae85"},
 ]
 
 [[package]]
@@ -4500,4 +4500,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "572e19e147dd2b1f1c3f63267249e79ef10d8dba749f2272adcbb3d017806664"
+content-hash = "7d7d9ffbd14553607840d9a492421892d00d19ec2f3ba7e0e2f2c5d8d4b5173f"
