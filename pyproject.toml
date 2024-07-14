@@ -11,7 +11,7 @@ include = ["gptdb_hub/baseline/baseline.json"]
 python = ">=3.10,<3.13"
 transformers = "4.38.0"
 peft = "0.4.0"
-accelerate = "0.21.0"
+accelerate = "0.32.1"
 einops = "0.6.1"
 evaluate = "0.4.0"
 scikit-learn = "1.2.2"
