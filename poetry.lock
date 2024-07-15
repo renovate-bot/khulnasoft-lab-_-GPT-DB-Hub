@@ -577,37 +577,38 @@ vision = ["Pillow (>=9.4.0)"]
 
 [[package]]
 name = "deepspeed"
-version = "0.10.2"
+version = "0.14.4"
 description = "DeepSpeed library"
 optional = false
 python-versions = "*"
 files = [
-    {file = "deepspeed-0.10.2.tar.gz", hash = "sha256:286bb1f01ea7340c9e18d78a562393dd1c12cc1406f1f5996f4be1d6984360ef"},
+    {file = "deepspeed-0.14.4.tar.gz", hash = "sha256:bb2f404b4a1d06aedd40c64d661f71307c22945d04a42d397ad39bbfeef9c8b8"},
 ]
 
 [package.dependencies]
 hjson = "*"
 ninja = "*"
 numpy = "*"
+nvidia-ml-py = "*"
 packaging = ">=20.0"
 psutil = "*"
 py-cpuinfo = "*"
-pydantic = "<2.0.0"
+pydantic = "*"
 torch = "*"
 tqdm = "*"
 
 [package.extras]
 1bit-mpi = ["mpi4py"]
-all = ["accelerate", "autodoc_pydantic (<2.0.0)", "clang-format (==16.0.2)", "coverage", "diffusers", "docutils (<0.18)", "future", "google", "hjson", "importlib-metadata (>=4)", "lm-eval (==0.3.0)", "mpi4py", "mup", "neural-compressor (==2.1.0)", "packaging", "pre-commit (>=2.20.0)", "protobuf", "psutil", "py-cpuinfo", "pydantic (<2.0.0)", "pytest", "pytest-forked", "pytest-randomly", "pytest-xdist", "recommonmark", "sphinx", "sphinx-rtd-theme", "tabulate", "tensorboard", "torch", "torchvision", "tqdm", "transformers", "transformers[sentencepiece]", "triton (==1.0.0)", "triton (==2.0.0.dev20221202)", "triton (>=2.0.0)", "wandb", "xgboost"]
+all = ["accelerate", "autodoc_pydantic", "clang-format (==16.0.2)", "comet_ml (>=3.41.0)", "deepspeed-kernels", "diffusers (>=0.25.0)", "docutils (<0.18)", "future", "google", "hjson", "importlib-metadata (>=4)", "lm-eval (==0.3.0)", "mpi4py", "mup", "neural-compressor (==2.1.0)", "packaging", "pre-commit (>=2.20.0)", "protobuf", "psutil", "py-cpuinfo", "pydantic (<2.0.0)", "pytest (>=7.2.0)", "pytest-forked", "pytest-randomly", "pytest-xdist", "qtorch", "qtorch (==0.3.0)", "recommonmark", "safetensors", "sentencepiece", "sphinx", "sphinx-rtd-theme", "sphinx_rtd_theme", "tabulate", "tensorboard", "torch", "torchvision", "tqdm", "transformers (>=4.32.1)", "transformers (>=4.39.0)", "triton (==1.0.0)", "triton (==2.1.0)", "triton (>=2.1.0)", "wandb", "xgboost"]
 autotuning = ["tabulate"]
 autotuning-ml = ["hjson", "tabulate", "xgboost"]
-dev = ["accelerate", "clang-format (==16.0.2)", "coverage", "docutils (<0.18)", "future", "importlib-metadata (>=4)", "mup", "pre-commit (>=2.20.0)", "pytest", "pytest-forked", "pytest-randomly", "pytest-xdist", "recommonmark", "sphinx", "sphinx-rtd-theme", "tensorboard", "torchvision", "transformers", "wandb"]
-inf = ["google", "lm-eval (==0.3.0)", "protobuf", "transformers", "transformers[sentencepiece]"]
-readthedocs = ["autodoc_pydantic (<2.0.0)", "docutils (<0.18)", "hjson", "packaging", "psutil", "py-cpuinfo", "pydantic (<2.0.0)", "torch", "tqdm"]
-sd = ["diffusers", "triton (==2.0.0.dev20221202)"]
+dev = ["accelerate", "clang-format (==16.0.2)", "comet_ml (>=3.41.0)", "deepspeed-kernels", "docutils (<0.18)", "future", "importlib-metadata (>=4)", "mup", "pre-commit (>=2.20.0)", "pytest (>=7.2.0)", "pytest-forked", "pytest-randomly", "pytest-xdist", "qtorch (==0.3.0)", "recommonmark", "sphinx", "sphinx-rtd-theme", "tensorboard", "torchvision", "transformers (>=4.39.0)", "wandb"]
+inf = ["google", "lm-eval (==0.3.0)", "protobuf", "qtorch", "safetensors", "sentencepiece", "transformers (>=4.32.1)"]
+readthedocs = ["autodoc_pydantic", "docutils (<0.18)", "hjson", "packaging", "psutil", "py-cpuinfo", "pydantic (<2.0.0)", "recommonmark", "sphinx_rtd_theme", "torch", "tqdm"]
+sd = ["diffusers (>=0.25.0)", "triton (>=2.1.0)"]
 sparse = ["neural-compressor (==2.1.0)"]
 sparse-attn = ["triton (==1.0.0)"]
-triton = ["triton (>=2.0.0)"]
+triton = ["triton (==2.1.0)"]
 
 [[package]]
 name = "dill"
@@ -1949,6 +1950,17 @@ files = [
 
 [package.dependencies]
 nvidia-nvjitlink-cu12 = "*"
+
+[[package]]
+name = "nvidia-ml-py"
+version = "12.555.43"
+description = "Python Bindings for the NVIDIA Management Library"
+optional = false
+python-versions = "*"
+files = [
+    {file = "nvidia-ml-py-12.555.43.tar.gz", hash = "sha256:e9e7f12ef1ec234bb0dc22d2bdc762ffafab394bdc472a07a4377c95bbf93afe"},
+    {file = "nvidia_ml_py-12.555.43-py3-none-any.whl", hash = "sha256:b89ba66e8ba8032fdbbaa907323f248be0ed001e106f814a1e1137e58eba2a80"},
+]
 
 [[package]]
 name = "nvidia-nccl-cu12"
@@ -4508,4 +4520,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "225a79707c8fb28f788faba4c5b707b756b68d831887b16a1f1281a9c41102a0"
+content-hash = "902573ad308fb7c87f9b002b59bd4f8f9dd6ff78217f15870b6bf17f9fa16e92"
