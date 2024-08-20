@@ -841,9 +841,9 @@ def get_dataset(
     model_args: "ModelArguments", data_args: "DataArguments"
 ) -> Union["Dataset", "IterableDataset"]:
     max_samples = data_args.max_samples
-    all_datasets: List[
-        Union["Dataset", "IterableDataset"]
-    ] = []  # support multiple datasets
+    all_datasets: List[Union["Dataset", "IterableDataset"]] = (
+        []
+    )  # support multiple datasets
 
     for dataset_attr in data_args.dataset_list:
         logger.info("Loading dataset {}...".format(dataset_attr))

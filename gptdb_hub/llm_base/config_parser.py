@@ -62,9 +62,7 @@ def _parse_args(
         return parser.parse_args_into_dataclasses()
 
 
-def parse_train_args(
-    args: Optional[Dict[str, Any]] = None
-) -> Tuple[
+def parse_train_args(args: Optional[Dict[str, Any]] = None) -> Tuple[
     ModelArguments,
     DataArguments,
     Seq2SeqTrainingArguments,
