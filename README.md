@@ -18,9 +18,6 @@
     <a href="https://github.com/khulnasoft-lab/GPT-DB-Hub/issues">
       <img alt="Open Issues" src="https://img.shields.io/github/issues-raw/khulnasoft-lab/GPT-DB-Hub" />
     </a>
-    <a href="https://discord.gg/7uQnPuveTY">
-      <img alt="Discord" src="https://dcbadge.vercel.app/api/server/7uQnPuveTY?compact=true&style=flat" />
-    </a>
   </p>
 
 
