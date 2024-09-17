@@ -53,7 +53,7 @@ def core_dependencies():
         "scipy>=1.11.3",
         "nltk>=3.8.1",
         "pymysql>=1.1.0",
-        "pyyaml==6.0.1",
+        "pyyaml==6.0.2",
         "black>=23.11.0",
         "pyright>=1.1.335",
         "pylint>=3.0.2",
