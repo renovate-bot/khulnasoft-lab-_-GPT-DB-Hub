@@ -64,7 +64,7 @@ def core_dependencies():
         "nvidia-cudnn-cu12==8.9.2.26",
         "nvidia-cublas-cu12==12.1.3.1",
         "nvidia-cufft-cu12==11.0.2.54",
-        "nvidia-curand-cu12==10.3.2.106",
+        "nvidia-curand-cu12==10.3.10.19",
         "nvidia-cusolver-cu12==11.4.5.107",
         "nvidia-cusparse-cu12==12.1.0.106",
         "nvidia-nccl-cu12==2.18.1",
