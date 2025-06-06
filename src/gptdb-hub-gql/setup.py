@@ -66,7 +66,7 @@ def core_dependencies():
         "nvidia-cufft-cu12==11.0.2.54",
         "nvidia-curand-cu12==10.3.2.106",
         "nvidia-cusolver-cu12==11.4.5.107",
-        "nvidia-cusparse-cu12==12.1.0.106",
+        "nvidia-cusparse-cu12==12.5.10.65",
         "nvidia-nccl-cu12==2.18.1",
         "nvidia-nvtx-cu12==12.1.105",
         "triton==2.1.0",
