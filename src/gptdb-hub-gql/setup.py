@@ -60,7 +60,7 @@ def core_dependencies():
         "markupsafe==2.1.3",
         "nvidia-cuda-nvrtc-cu12==12.1.105",
         "nvidia-cuda-runtime-cu12==12.1.105",
-        "nvidia-cuda-cupti-cu12==12.1.105",
+        "nvidia-cuda-cupti-cu12==12.9.79",
         "nvidia-cudnn-cu12==8.9.2.26",
         "nvidia-cublas-cu12==12.1.3.1",
         "nvidia-cufft-cu12==11.0.2.54",
