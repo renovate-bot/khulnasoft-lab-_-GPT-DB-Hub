@@ -103,9 +103,9 @@ class DataArguments:
             "help": "Size of the buffer to randomly sample examples from in streaming mode."
         },
     )
-    mix_strategy: Optional[
-        Literal["concat", "interleave_under", "interleave_over"]
-    ] = field(default="concat", metadata={"help": "Strategy to use in dataset mixing."})
+    mix_strategy: Optional[Literal["concat", "interleave_under", "interleave_over"]] = (
+        field(default="concat", metadata={"help": "Strategy to use in dataset mixing."})
+    )
     interleave_probs: Optional[str] = field(
         default=None,
         metadata={
