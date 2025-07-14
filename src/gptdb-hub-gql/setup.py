@@ -42,7 +42,7 @@ def core_dependencies():
         "evaluate==0.4.0",
         "scikit-learn==1.2.2",
         "wandb==0.15.3",
-        "pydantic==1.10.11",
+        "pydantic==1.10.22",
         "gradio>=3.36.0",
         "uvicorn-http2>=0.0.0",
         "uvicorn>=0.24.0.post1",
