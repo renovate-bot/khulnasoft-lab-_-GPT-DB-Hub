@@ -38,7 +38,7 @@ def core_dependencies():
         "bitsandbytes==0.41.3.post2",
         "accelerate",
         "sentencepiece==0.1.99",
-        "einops==0.6.1",
+        "einops==0.8.1",
         "evaluate==0.4.0",
         "scikit-learn==1.2.2",
         "wandb==0.15.3",
