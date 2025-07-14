@@ -46,7 +46,7 @@ def core_dependencies():
         "gradio>=3.36.0",
         "uvicorn-http2>=0.0.0",
         "uvicorn>=0.24.0.post1",
-        "fastapi==0.95.1",
+        "fastapi==0.116.1",
         "transformers-stream-generator>=0.0.4",
         "sse-starlette>=1.6.5",
         "rapidfuzz>=3.5.2",
