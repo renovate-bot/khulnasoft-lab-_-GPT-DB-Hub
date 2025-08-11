@@ -35,7 +35,7 @@ def core_dependencies():
         "jieba>=0.42.1",
         "nltk>=3.8.1",
         "matplotlib>=3.8.1",
-        "bitsandbytes==0.41.3.post2",
+        "bitsandbytes==0.47.0",
         "accelerate",
         "sentencepiece==0.1.99",
         "einops==0.8.1",
